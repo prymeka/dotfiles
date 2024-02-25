@@ -90,6 +90,12 @@ return packer.startup(function(use)
   -- Jupyter Notebooks
   use "luk400/vim-jukit"
 
+  -- Markdown Preview
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
