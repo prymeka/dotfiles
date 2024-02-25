@@ -46,6 +46,9 @@ keymap("n", "<C-w>", ":Bdelete!<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Enter new lines with Enter
+keymap("n", "<Enter>", "o<Esc>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
