@@ -46,9 +46,6 @@ keymap("n", "<C-w>", ":Bdelete!<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- Enter new lines with Enter
-keymap("n", "<Enter>", "o<Esc>", opts)
-
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
@@ -79,6 +76,10 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Centring
+keymap("n", "<leader>z", "<cmd>lua require'centerpad'.toggle{ leftpad = 120, rightpad = 20 }<cr>", opts)
+keymap("n", "<leader>Z", "<cmd>lua require'centerpad'.toggle{ leftpad = 120, rightpad = 120 }<cr>", opts)
 
 -- Telescope 
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)

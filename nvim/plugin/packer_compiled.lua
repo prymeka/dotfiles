@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/alex/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["centerpad.nvim"] = {
+    loaded = true,
+    path = "/home/alex/.local/share/nvim/site/pack/packer/start/centerpad.nvim",
+    url = "https://github.com/smithbm2316/centerpad.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/alex/.local/share/nvim/site/pack/packer/start/cmp-buffer",
