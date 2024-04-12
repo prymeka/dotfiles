@@ -20,5 +20,6 @@ alias mv='mv -iv'
 alias hss='hugo server --noHTTPCache'
 alias up='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y'
 alias condaup='conda update --all -y && conda upgrade --all -y && conda clean --all -y'
+alias pipup="pip --disable-pip-version-check list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U"
 
 # after making changes run 'source .bashrc' 
