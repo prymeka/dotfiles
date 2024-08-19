@@ -90,3 +90,6 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 vim.cmd [[nnoremap S :%s//g<Left><Left>]]
 -- Spelling checker
 vim.cmd [[map <leader>o :setlocal spell! spelllang=en_us<CR>]]
+
+-- oil.nvim 
+keymap("n", "-", "<cmd>Oil<CR>", { desc = "Open parent directory" })

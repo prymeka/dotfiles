@@ -88,7 +88,7 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   -- Jupyter Notebooks
-  use "luk400/vim-jukit"
+  -- use "luk400/vim-jukit"
 
   -- Markdown Preview
   use {
@@ -101,6 +101,12 @@ return packer.startup(function(use)
 
   -- Nvim-Tmux navigation
   use "christoomey/vim-tmux-navigator"
+
+  -- Neovim file explorer
+  use {
+    "stevearc/oil.nvim",
+    config = function() require("oil").setup() end,
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
