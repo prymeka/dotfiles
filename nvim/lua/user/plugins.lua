@@ -99,6 +99,9 @@ return packer.startup(function(use)
   -- Centre file content
   use "smithbm2316/centerpad.nvim"
 
+  -- Nvim-Tmux navigation
+  use "christoomey/vim-tmux-navigator"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
